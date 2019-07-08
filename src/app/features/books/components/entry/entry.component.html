@@ -1,0 +1,34 @@
+<div>
+  <table>
+    <tr>
+      <label>Add A New Book</label>
+    </tr>
+    <tr>
+      <td>Title: </td>
+      <td><input type="text"
+               id="title"
+               #title /></td>
+    </tr>
+    <tr>
+      <td>Author: </td>
+      <td><input type="text"
+               id="author"
+               #author /></td>
+    </tr>
+    <tr>
+      <td>Format: </td>
+      <td><select id="format"
+                #format>
+          <option value="Hardcover">Hardcover</option>
+          <option value="Paperback">Paperback</option>
+          <option value="E-Book">E-Book</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td>Add book: </td>
+      <td><input type="button"
+               (click)="add(title, author, format)"
+               value="Add" /></td>
+    </tr>
+  </table>
+</div>
